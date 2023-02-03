@@ -17,5 +17,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo "debug ${{ env.GITHUB_BASE_REF }}"
+      - run: echo "debug ${{ github.event.pull_request.comments_url }}"
       # - run: gh pr comment --body 'gh Success .... xxxxxxxxxxxxxxxx'
